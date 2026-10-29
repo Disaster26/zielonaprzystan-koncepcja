@@ -17,7 +17,7 @@
     dane.slice(0,ile).forEach(function(p,i){
       var bt=document.createElement('button');bt.type='button';bt.className='real';
       bt.innerHTML='<span class="real-foto"><img src="img/g/'+p.s+'-m.webp" alt="'+p.t+'" loading="lazy" width="600" height="450"></span><span class="real-t"><b>'+p.t+'</b><span>Zobacz zdjęcia</span></span>';
-      bt.addEventListener('click',function(){otworz(p.t,p.i.map(function(x){return x[0];}),0,bt);});
+      bt.addEventListener('click',function(){otworz(p.t,p.i.map(function(x){return 'img/'+x[0];}),0,bt);});
       g.appendChild(bt);
     });
   });
